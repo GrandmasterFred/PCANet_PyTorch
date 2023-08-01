@@ -141,7 +141,7 @@ def binary_to_decimal(binary_features, channels):
 
 
 if __name__ == "__main__":
-    batch_features = torch.randn(2, 4, 3, 3)
+    batch_features = torch.randn(2, 4, 3, 3).to('cuda:0')
     print(batch_features)
     batch_feature = binarize(batch_features)
     print(batch_features)
