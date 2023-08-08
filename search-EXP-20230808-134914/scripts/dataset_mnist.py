@@ -47,11 +47,11 @@ def load_train_mnist(args):
     train_queue = torch.utils.data.DataLoader(
         train_data, batch_size=args.batch_size,
         sampler=torch.utils.data.sampler.SubsetRandomSampler(indices[:split]),
-        pin_memory=True)
+        pin_memory=True, num_workers=2)
     valid_queue = torch.utils.data.DataLoader(
         train_data, batch_size=args.batch_size,
         sampler=torch.utils.data.sampler.SubsetRandomSampler(indices[split:num_train]),
-        pin_memory=True)
+        pin_memory=True, num_workers=2)
 
     return train_queue, valid_queue
 
