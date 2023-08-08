@@ -21,7 +21,8 @@ parser.add_argument('--dataset_name', type=str, default='mnist', help='mnist or 
 # i made a change to this one argument so that it does not save it to a random directory
 parser.add_argument('--dataset_path', type=str, default='dataset/', help='location of the data corpus')
 parser.add_argument('--batch_size', type=int, default=128, help='batch size')
-parser.add_argument('--train_portion', type=float, default=1.0, help='portion of training data')
+# editing the train portion to be like 5% to make everything go faster
+parser.add_argument('--train_portion', type=float, default=0.01, help='portion of training data')
 parser.add_argument('--stages', type=int, default=2, help='the number of stages')
 parser.add_argument('--filter_shape', type=list, default=[7, 7], help='patch size')
 parser.add_argument('--stages_channels', type=list, default=[8, 8], help='channels in different stages')
