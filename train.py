@@ -67,7 +67,7 @@ def main():
         for global_step, (train_images, train_labels) in enumerate(train_queue):
             train_images = train_images.cuda()
             total_train_labels = torch.cat((total_train_labels, train_labels))
-            utils.save_feature([train_images, train_labels], save_filename)
+            utils.save_feature([train_images, train_labels], save_filename)         # this seems to save the images
             pcanet.unrolled_stage(train_images, 0)
 
             if global_step % args.log_freq== 0:

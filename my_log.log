@@ -1,0 +1,18 @@
+2023-08-14 13:28:45,209 - INFO - This is an info message.
+2023-08-14 13:28:45,209 - WARNING - This is a warning message.
+2023-08-14 13:28:45,209 - ERROR - This is an error message.
+2023-08-14 13:59:25,097 - INFO - gpu device = 0
+2023-08-14 14:00:32,464 - INFO - gpu device = 0
+2023-08-14 14:00:32,465 - INFO - ('args = %s', Namespace(f='C:\\Users\\PC\\AppData\\Roaming\\jupyter\\runtime\\kernel-b13e34ba-e952-4cb8-a271-e9155cef7af2.json', gpu=0, dataset_name='mnist', dataset_path='/dataset/', batch_size=128, train_portion=0.01, stages=2, filter_shape=[7, 7], stages_channels=[8, 8], block_size=7, block_overlap=0.5, save='search-EXP-20230814-135920', log_freq=40))
+2023-08-14 14:00:33,408 - INFO - load training dataset completely
+2023-08-14 14:00:43,847 - INFO - init training global_step: 0
+2023-08-14 14:00:45,621 - INFO - PCANet stage: 0
+2023-08-14 14:01:08,385 - INFO - circulate training step: 0
+2023-08-14 14:01:22,590 - INFO - PCANet stage: 1
+2023-08-14 14:01:31,513 - INFO - circulate training step: 0
+2023-08-14 14:02:01,902 - INFO - extract feature completely, start training classifier
+2023-08-14 14:02:06,294 - INFO - classifier trained completely
+2023-08-14 14:02:06,500 - INFO - score of training is 1.0
+2023-08-15 10:32:00,332 - INFO - gpu device = 0
+2023-08-15 10:32:00,343 - INFO - ('args = %s', Namespace(f='C:\\Users\\PC\\AppData\\Roaming\\jupyter\\runtime\\kernel-8ed295ff-62d8-41fe-90fd-7c83154a6fd9.json', gpu=0, dataset_name='mnist', dataset_path='/dataset/', batch_size=128, train_portion=0.01, stages=2, filter_shape=[7, 7], stages_channels=[8, 8], block_size=7, block_overlap=0.5, save='search-EXP-20230815-103200', log_freq=40))
+2023-08-15 10:32:01,168 - INFO - load training dataset completely

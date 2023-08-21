@@ -1,0 +1,11 @@
+2023-08-14 15:31:07,583 - INFO - gpu device = 0
+2023-08-14 15:31:07,584 - INFO - ('args = %s', Namespace(f='C:\\Users\\PC\\AppData\\Roaming\\jupyter\\runtime\\kernel-cc11951f-281c-47ba-8812-123026cb34da.json', gpu=0, dataset_name='mnist', dataset_path='/dataset/', batch_size=256, stages=2, pretrained_path='search-EXP-20230814-135920', log_freq=30, save='search-EXP-20230814-153103'))
+2023-08-14 15:31:07,841 - INFO - load PCANet and SVM completely
+2023-08-14 15:31:31,683 - INFO - gpu device = 0
+2023-08-14 15:31:31,683 - INFO - ('args = %s', Namespace(f='C:\\Users\\PC\\AppData\\Roaming\\jupyter\\runtime\\kernel-cc11951f-281c-47ba-8812-123026cb34da.json', gpu=0, dataset_name='mnist', dataset_path='/dataset/', batch_size=256, stages=2, pretrained_path='search-EXP-20230814-135920', log_freq=30, save='search-EXP-20230814-153131'))
+2023-08-14 15:31:31,687 - INFO - load PCANet and SVM completely
+2023-08-14 15:31:31,861 - INFO - load testing dataset completely
+2023-08-14 15:32:11,368 - INFO - global_step 0, stage 1, batch accuracy 0.726562
+2023-08-14 15:41:26,769 - INFO - global_step 30, stage 1, batch accuracy 0.769531
+2023-08-14 15:44:07,950 - INFO - total accuracy 0.750200
+2023-08-14 15:44:07,950 - INFO - test completely

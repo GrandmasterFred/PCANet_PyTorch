@@ -19,7 +19,7 @@ class PCANet(object):
 
         self.pca = {}
         for i, output_channel in enumerate(stages_channels):
-            self.pca[i] = IncrementalPCA(n_components=output_channel)
+            self.pca[i] = IncrementalPCA(n_components=output_channel)       # incrementally stores significant vectors it seems
 
     def unrolled_stage(self, batch_images, stage):
         batch_size = batch_images.shape[0]
@@ -29,8 +29,8 @@ class PCANet(object):
         patches = patches.reshape(batch_size, self.filter_shape[stage] * self.filter_shape[stage], -1)
         patches = self.patch_mean_removal(patches)
         patch_matrix = patches.reshape(-1, self.filter_shape[stage] * self.filter_shape[stage])
-        patch_matrix = patch_matrix.cpu()
-        self.pca[stage].partial_fit(patch_matrix)
+        patch_matrix = patch_matrix.cpu()               # this needs to be investigated to see if the matrix is getting passed correctly or not
+        self.pca[stage].partial_fit(patch_matrix)       # incrementally stores significant vectors
 
     def patch_mean_removal(self, patches):
         patches_mean = torch.mean(patches, dim=1, keepdim=True)

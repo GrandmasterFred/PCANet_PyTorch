@@ -2,6 +2,7 @@ import os
 import pickle
 import shutil
 import numpy as np
+import logging
 
 
 def create_exp_dir(path, scripts_to_save=None):
@@ -75,6 +76,35 @@ def exchange_channel(single_feature):
     """
     single_feature = single_feature.unsqueeze(dim=1)
     return single_feature
+
+# make a class that has the logger, as well as the method of printing i guess
+
+class MyLogger:
+    def __init__(self, log_file, log_level=logging.DEBUG):
+        # Configure logging settings
+        self.log_file = log_file
+        self.log_level = log_level
+        self._configure_logging()
+
+    def _configure_logging(self):
+        logging.basicConfig(filename=self.log_file, level=self.log_level,
+                            format='%(asctime)s - %(levelname)s - %(message)s')
+
+    def log(self, message, level=logging.INFO):
+        if level == logging.DEBUG:
+            logging.debug(message)
+        elif level == logging.INFO:
+            logging.info(message)
+        elif level == logging.WARNING:
+            logging.warning(message)
+        elif level == logging.ERROR:
+            logging.error(message)
+        elif level == logging.CRITICAL:
+            logging.critical(message)
+        else:
+            raise ValueError("Invalid log level")
+        # this then also prints to console as well
+        print(message)
 
 
 if __name__ == "__main__":
