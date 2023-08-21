@@ -70,7 +70,7 @@ class PCANet(object):
         features_h = batch_features.shape[2]
         features_w = batch_features.shape[3]
 
-        binary_features = binarize(batch_features)       # step function
+        binary_features = binarize(batch_features)       # step function, the heaviside function mentioned
         binary_features = binary_features.reshape(-1, self.stages_channels[stage], features_h, features_w)
 
         decimal_features = binary_to_decimal(binary_features, self.stages_channels[stage])
