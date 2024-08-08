@@ -1,0 +1,3 @@
+2023-08-21 13:15:58,363 gpu device = 0
+2023-08-21 13:15:58,364 args = Namespace(gpu=0, dataset_name='mnist', dataset_path='dataset/', batch_size=128, train_portion=0.01, stages=2, filter_shape=[7, 7], stages_channels=[8, 8], block_size=7, block_overlap=0.5, save='search-EXP-20230821-131558', log_freq=40)
+2023-08-21 13:16:04,613 load training dataset completely

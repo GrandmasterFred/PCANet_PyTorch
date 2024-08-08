@@ -1,0 +1,7 @@
+2023-08-21 15:00:54,979 gpu device = 0
+2023-08-21 15:00:54,980 args = Namespace(gpu=0, dataset_name='mnist', dataset_path='dataset/', batch_size=128, train_portion=0.01, stages=2, filter_shape=[7, 7], stages_channels=[8, 8], block_size=7, block_overlap=0.5, save='search-EXP-20230821-150054', log_freq=40)
+2023-08-21 15:00:55,454 load training dataset completely
+2023-08-21 15:00:59,365 init training global_step: 0
+2023-08-21 15:01:01,156 PCANet stage: 0
+2023-08-21 15:01:14,660 circulate training step: 0
+2023-08-21 15:01:30,234 PCANet stage: 1
